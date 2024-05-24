@@ -44,7 +44,7 @@ def decrypt_image(encrypted_image_path):
     except Exception as e:
         print("Error decrypting image:", e)
 
-original_image_path = "cub.jpeg"
+original_image_path = "bullet.jpeg"
 encrypted_image_path = encrypt_image(original_image_path)
 if encrypted_image_path:
     decrypted_image_path = decrypt_image(encrypted_image_path)
@@ -57,7 +57,7 @@ def display_image(image_path, title):
     plt.axis('off')
     plt.show()
 
-original_image_path = "cub.jpeg"
+original_image_path = "bullet.jpeg"
 display_image(original_image_path, "Original Image")
 
 encrypted_image_path = encrypt_image(original_image_path)  
